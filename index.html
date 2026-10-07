@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Вся правда о Кошкомальчиках 🐾</title>
+    <style>
+        body {
+            background-color: #1a1a24;
+            color: #e2e8f0;
+            font-family: sans-serif;
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #ff79c6;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .meme-zone {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .cat-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%; /* Делает картинку круглой */
+            border: 3px solid #8be9fd; /* Голубая неоновая рамка */
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .column {
+            background-color: #282a36;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+            border: 1px solid #ff79c6;
+        }
+        h2 {
+            color: #8be9fd;
+            margin-top: 0;
+        }
+        .button-zone {
+            text-align: center;
+            margin-top: 40px;
+        }
+        button {
+            background-color: #ff79c6;
+            color: #1a1a24;
+            font-weight: bold;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #8be9fd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🐾 Вся правда о Кошкомальчиках</h1>
+    
+    <!-- НОВЫЙ БЛОК: Добавили картинку -->
+    <div class="meme-zone">
+        <img class="cat-img" src="https://unsplash.com" alt="Котик">
+    </div>
+    
+    <div class="container">
+        <div class="column">
+            <h2>Плюсы БЫТЬ кошкомальчиком:</h2>
+            <ul>
+                <li>Можно спать по 18 часов в сутки, и никто тебя не осудит.</li>
+                <li>Бесплатный корм и почесушки за ушком каждый день.</li>
+                <li>Если накосячил в коде, можно просто сделать "тыгыдык" в 3 часа ночи.</li>
+                <li>Тебе автоматически прощаются все капризы за милые ушки.</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h2>Плюсы ИМЕТЬ кошкомальчика:</h2>
+            <ul>
+                <li>Всегда есть живой источник мурчания и уюта под рукой.</li>
+                <li>Он умеет греть клавиатуру своим телом (правда, когда ты работает).</li>
+                <li>Идеальный напарник для совместного просмотра аниме и поедания чипсов.</li>
+                <li>Повышает милоту в комнате на 300%.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="button-zone">
+        <button id="catButton">Погладить кошкомальчика 👋</button>
+    </div>
+
+    <script>
+        const btn = document.getElementById('catButton');
+        btn.addEventListener('click', function() {
+            alert('Мур-мур! 🐾 Кошкомальчик замурчал от удовольствия и пожелал тебе удачи в программировании!');
+        });
+    </script>
+
+</body>
+</html>
